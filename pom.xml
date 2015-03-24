@@ -29,6 +29,12 @@
             <artifactId>spring-webmvc</artifactId>
             <version>4.1.4.RELEASE</version>
         </dependency>
+        <dependency>
+            <groupId>org.mongodb</groupId>
+            <artifactId>mongo-java-driver</artifactId>
+            <version>2.10.1</version>
+        </dependency>
+
     </dependencies>
     <build>
         <finalName>webservices</finalName>
