@@ -1,3 +1,5 @@
+package epsi.webservices.dao;
+
 import com.mongodb.*;
 import org.apache.log4j.Logger;
 
@@ -15,7 +17,7 @@ public class MongoDao implements ServletContextListener {
     private static DB db;
     private static DBCollection collection;
 
-    @Override
+
     public void contextInitialized(ServletContextEvent servletContextEvent) {
         try {
             mongo = new MongoClient();
@@ -29,7 +31,6 @@ public class MongoDao implements ServletContextListener {
     }
 
 
-    @Override
     public void contextDestroyed(ServletContextEvent servletContextEvent) {
         mongo.close();
     }
