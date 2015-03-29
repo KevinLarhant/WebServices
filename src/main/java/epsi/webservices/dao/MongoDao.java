@@ -28,6 +28,10 @@ public class MongoDao implements ServletContextListener {
         db = mongo.getDB("ArchiWeb");
 
         collection = db.getCollection("produits");
+
+        System.out.println("coucou");
+
+
     }
 
 

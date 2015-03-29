@@ -12,8 +12,14 @@
     </servlet>
     <servlet-mapping>
         <servlet-name>spring-rest</servlet-name>
-        <url-pattern>/product/*</url-pattern>
+        <url-pattern>/rest/*</url-pattern>
     </servlet-mapping>
 
+
+    <listener>
+        <listener-class>
+            epsi.webservices.dao.MongoDao
+        </listener-class>
+    </listener>
 
 </web-app>
