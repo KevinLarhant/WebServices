@@ -5,6 +5,7 @@ package epsi.webservices.beans;
  */
 public class Product {
 
+    private int id;
     private String reference;
     private int quantity;
 
@@ -23,5 +24,13 @@ public class Product {
 
     public void setQuantity(int quantity) {
         this.quantity = quantity;
+    }
+
+    public int getId() {
+        return id;
+    }
+
+    public void setId(int id) {
+        this.id = id;
     }
 }
